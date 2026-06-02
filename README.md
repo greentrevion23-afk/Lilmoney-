@@ -1,0 +1,27 @@
+```lua
+-- This script assumes there's a 'Money' variable in the player's leaderstats
+local player = game.Players.LocalPlayer
+local playerMoney = player:WaitForChild("leaderstats"):WaitForChild("Money")
+
+local amountToAdd = 1000 -- Amount to add
+
+local function addMoney()
+    playerMoney.Value = playerMoney.Value + amountToAdd
+end
+
+-- Create a button for the player to click
+local button = Instance.new("TextButton")
+button.Size = UDim2.new(0, 200, 0, 50)
+button.Position = UDim2.new(0.5, -100, 0.5, -25)
+button.Text = "Add Money"
+button.Parent = game.Players.PlayerGui:WaitForChild("ScreenGui")
+
+button.MouseButton1Click:Connect(addMoney)
+```
+
+To use this script:
+
+1. Make sure your game has a `leaderstats` folder set up for the player with a `Money` value.
+2. Insert the script in a LocalScript within `StarterPlayerScripts` or `StarterPlayerGui`.
+
+This script creates a button that, when 
