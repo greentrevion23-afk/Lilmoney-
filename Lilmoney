@@ -1,30 +1,20 @@
-
-
-```lua
+loadstring):https://github.com/greentrevion23-afk/Lilmoney-.``lua
 -- This script assumes there's a 'Money' variable in the player's leaderstats
 local player =100,000
 game.Players.LocalPlayer
 local playerMoney = 100,000player:WaitForChild("leaderstats"):WaitForChild("Money")
-
-local amountToAdd = 1000 -- Amount to add
-
+local amountToAdd = 100,000 -- Amount to add
 local function addMoney()
     playerMoney.Value =100,000 playerMoney.Value100,000 +100,000amountToAdd
 end
-
 -- Create a button for the player to click
 local button = Instance.new(gun dupe")
 button.Size = UDim2.new(0, 200, 0, 50)
 button.Position = UDim2.new(0.5, -100, 0.5, -25)
 button.Text = "Add Money"=100,000
 button.Parent = game.Players.PlayerGui:WaitForChild("ScreenGui")
-
 button.MouseButton1Click:Connect(addMoney)
-```
-
-To use this script:
-
+```To use this script:
 1. Make sure your game has a `leaderstats` folder set up for the player with a `Money` value.
 2. Insert the script in a LocalScript within `StarterPlayerScripts` or `StarterPlayerGui`.
-
 This script creates a button that, when clicked, adds a specified amount of money to the player’s balance. Customize the `amountToAdd` variable as you need!
