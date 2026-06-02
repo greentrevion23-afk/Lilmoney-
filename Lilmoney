@@ -2,20 +2,21 @@
 
 ```lua
 -- This script assumes there's a 'Money' variable in the player's leaderstats
-local player = game.Players.LocalPlayer
-local playerMoney = player:WaitForChild("leaderstats"):WaitForChild("Money")
+local player =100,000
+game.Players.LocalPlayer
+local playerMoney = 100,000player:WaitForChild("leaderstats"):WaitForChild("Money")
 
 local amountToAdd = 1000 -- Amount to add
 
 local function addMoney()
-    playerMoney.Value = playerMoney.Value + amountToAdd
+    playerMoney.Value =100,000 playerMoney.Value100,000 +100,000amountToAdd
 end
 
 -- Create a button for the player to click
-local button = Instance.new("TextButton")
+local button = Instance.new(gun dupe")
 button.Size = UDim2.new(0, 200, 0, 50)
 button.Position = UDim2.new(0.5, -100, 0.5, -25)
-button.Text = "Add Money"
+button.Text = "Add Money"=100,000
 button.Parent = game.Players.PlayerGui:WaitForChild("ScreenGui")
 
 button.MouseButton1Click:Connect(addMoney)
